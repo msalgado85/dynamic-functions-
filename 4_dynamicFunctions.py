@@ -57,14 +57,14 @@
 
 # Don't call the function, you just need to define it.
 
-# values = [-3,-1, 2, 4, 6]
-# def all_positives(num):
-#     for value in values:
-#         if value > 0:
-#             return True
-#         else: return False
+values = [-3,-1, 2, 4, 6]
+def all_positives(num):
+    for value in values: #iteraiton
+        if value > 0: #checking if the value is postive 
+            return True
+        else: return False
 
-# print(all_positives(values))
+print(all_positives(values))
 
 
 
@@ -72,13 +72,13 @@
 # Dynamic Functions Practice #2
 # Create a function (sum_less) that adds the numbers of a list as long as they are greater than 0 and less than 1000, and returns the result of said sum. Create a numbers variable, storing a list of numbers so we can test it.
 
-# values = [300, 500, 100]
-# def sum_less(num):
-#     for value in values:
-#         if sum(values) > 0 and sum(values) < 1000:
-#             sum_nums = sum(values)
-#         return sum_nums
-# print(sum_less(values))
+values = [300, 500, 100]
+def sum_less(num):
+    for value in values: #iteration
+        if sum(values) > 0 and sum(values) < 1000: #Checking if the value is greater than zero and less than 100
+            sum_nums = sum(values)
+        return sum_nums
+print(sum_less(values)) 
 
 
 
@@ -89,8 +89,8 @@ values = [4, 8, 11, 14, 21]
 def count_even(num):
     count = 0
     for value in values:
-        if value % 2 == 0:
-           count += 1
-        else: pass
+        if value % 2 == 0: #using mod to check if its even
+           count += 1 # my counter
+        else: pass 
     return count
-print(count_even(values))
+print(count_even(values)) #extraction
